@@ -4,9 +4,9 @@
 
 ## + MediatR for connection between API and application layer.
 
-
-## + Specify connection string in ...Q3TestApp.WebApi/appsettings.json 
 ## + Run WebApi project
+	### Specify connection string in ...Q3TestApp.WebApi/appsettings.json 
+
 ## + Run client app (angular):
 	### Open client-app folder using VS Code
 	### in terminal type "npm install"
