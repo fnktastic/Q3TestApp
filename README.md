@@ -1,3 +1,4 @@
+0. Specify connection string in ...Q3TestApp.WebApi/appsettings.json 
 1. Run WebApi project
 2. Run client app (angular):
 	a. Open client-app folder using VS Code
