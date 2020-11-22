@@ -10,7 +10,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let item of jobs">
+        <tr *ngFor="let item of jobs" [style.background-color]="getColor(item)">
             <td>{{ item.id }}</td>
             <td>{{ item.name }}</td>
             <td>{{ item.floor }}</td>

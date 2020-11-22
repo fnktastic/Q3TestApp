@@ -20,4 +20,15 @@ export class JobsComponent implements OnInit {
     this.service.markAsComplete(item.id).subscribe();
   }
 
+  getColor(item: Job) {
+    switch(item.jobStatus) {
+      case 'Complete': return 'green';
+      case 'Not Started': return 'white';
+      case 'In Progress': return 'blue';
+      case 'Delayed': return 'red';
+    }
+
+    return "gray";
+  }
+
 }
