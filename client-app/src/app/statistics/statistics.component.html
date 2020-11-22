@@ -1,0 +1,16 @@
+<table>
+    <thead>
+        <tr>
+            <th>roomTypeName</th>
+            <th>jobStatus</th>
+            <th>counOfJobs</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of roomSummaries">
+            <td>{{ item.roomTypeName }}</td>
+            <td>{{ item.jobStatus }}</td>
+            <td>{{ item.countOfJobs }}</td>
+        </tr>
+    </tbody>
+</table>
