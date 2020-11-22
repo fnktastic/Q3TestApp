@@ -18,6 +18,12 @@ namespace Q3TestApp.Domain.Entities
         public int? RJobID { get; set; }
 
         public Guid RoomTypeId { get; set; }
-        public RxRoomType RoomType {get;set;}
+        public RxRoomType RoomType { get; set; }
+
+        public void MardAsCompleted()
+        {
+            if (Status == "In Progress" || Status == "Delayed")
+                Status = "Complete";
+        }
     }
 }

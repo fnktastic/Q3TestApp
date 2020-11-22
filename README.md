@@ -1,3 +1,10 @@
+The full stack is: .NET Core 3.1 Web API + Angular 10
+
+EF Core as an ORM, FluentValidation, Automapper
+
++ MediatR for connection between API and application layer.
+
+
 0. Specify connection string in ...Q3TestApp.WebApi/appsettings.json 
 1. Run WebApi project
 2. Run client app (angular):
