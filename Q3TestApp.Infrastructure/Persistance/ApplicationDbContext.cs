@@ -19,7 +19,7 @@ namespace Q3TestApp.Infrastructure.Persistance
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {
-            int result = await SaveChangesAsync(cancellationToken);
+            int result = await base.SaveChangesAsync(cancellationToken);
 
             return result;
         }

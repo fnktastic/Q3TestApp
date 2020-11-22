@@ -35,7 +35,7 @@ namespace Q3TestApp.Application.RxRoomTypes.Commands.MarkJobAsCompleted
             }
 
             entity.MardAsCompleted();
-            
+
             await _context.SaveChangesAsync(cancellationToken);
 
             return Unit.Value;
