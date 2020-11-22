@@ -1,4 +1,4 @@
-# The full stack is: .NET Core 3.1 Web API + Angular 10 / Clean Architecture + CQRS
+# .NET Core 3.1 Web API + Angular 10 / Clean Architecture + CQRS
 
 ## EF Core as an ORM, FluentValidation, AutoMapper
 
