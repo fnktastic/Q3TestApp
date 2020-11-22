@@ -17,7 +17,9 @@ export class JobsComponent implements OnInit {
   }
 
   complete(item: Job) {
-    this.service.markAsComplete(item.id).subscribe();
+    this.service.markAsComplete(item.id).subscribe(() => {
+      item.jobStatus = "Complete"
+    });
   }
 
   getColor(item: Job) {
