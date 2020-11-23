@@ -2,9 +2,9 @@
 
 namespace Q3TestApp.Application.RxRoomTypes.Commands.MarkJobAsCompleted
 {
-    public class UpdateAudioCommandValidator : AbstractValidator<MarkJobAsCompletedCommand>
+    public class MarkJobAsCompletedCommandValidator : AbstractValidator<MarkJobAsCompletedCommand>
     {
-        public UpdateAudioCommandValidator()
+        public MarkJobAsCompletedCommandValidator()
         {
             RuleFor(v => v.Id).NotEmpty();
         }
