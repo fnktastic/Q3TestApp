@@ -13,7 +13,7 @@ namespace Q3TestApp.WebApi.Controllers
     public class MainController : ApiBaseController
     {
         [HttpGet]
-        public async Task<ActionResult<JobsVm>> GetJobs()
+        public async Task<ActionResult<JobsListVm>> GetJobs()
         {
             return await Mediator.Send(new GetJobsQuery());
         }

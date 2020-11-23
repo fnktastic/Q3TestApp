@@ -15,12 +15,12 @@ using System.Threading.Tasks;
 
 namespace Q3TestApp.Application.RxRoomTypes.Queries.GetJobs
 {
-    public class GetJobsQuery : IRequest<JobsVm>
+    public class GetJobsQuery : IRequest<JobsListVm>
     {
 
     }
 
-    public class GetJobsQueryHandler : IRequestHandler<GetJobsQuery, JobsVm>
+    public class GetJobsQueryHandler : IRequestHandler<GetJobsQuery, JobsListVm>
     {
         private readonly IApplicationDbContext _context;
         private readonly IMapper _mapper;
@@ -31,9 +31,9 @@ namespace Q3TestApp.Application.RxRoomTypes.Queries.GetJobs
             _mapper = mapper;
         }
 
-        public async Task<JobsVm> Handle(GetJobsQuery request, CancellationToken cancellationToken)
+        public async Task<JobsListVm> Handle(GetJobsQuery request, CancellationToken cancellationToken)
         {
-            return new JobsVm
+            return new JobsListVm
             {
                 Items = (await _context.Jobs
                     .ProjectTo<RxJobDto>(_mapper.ConfigurationProvider)
