@@ -29,8 +29,8 @@ namespace Q3TestApp.UnitTests
                 Status = "Not Started"
             };
 
-            jobInProgress.MardAsCompleted();
-            jobNotStarted.MardAsCompleted();
+            jobInProgress.MarkAsCompleted();
+            jobNotStarted.MarkAsCompleted();
 
             Assert.AreEqual(jobInProgress.Status, completedStatus);
             Assert.AreNotEqual(jobNotStarted.Status, completedStatus);

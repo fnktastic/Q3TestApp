@@ -20,7 +20,7 @@ namespace Q3TestApp.Domain.Entities
         public Guid RoomTypeId { get; set; }
         public RxRoomType RoomType { get; set; }
 
-        public void MardAsCompleted()
+        public void MarkAsCompleted()
         {
             if (Status == "In Progress" || Status == "Delayed")
                 Status = "Complete";

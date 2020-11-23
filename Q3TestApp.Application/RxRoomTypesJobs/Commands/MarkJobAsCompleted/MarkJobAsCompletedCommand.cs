@@ -34,7 +34,7 @@ namespace Q3TestApp.Application.RxRoomTypes.Commands.MarkJobAsCompleted
                 throw new NotFoundException(nameof(RxJob), request.Id);
             }
 
-            entity.MardAsCompleted();
+            entity.MarkAsCompleted();
 
             await _context.SaveChangesAsync(cancellationToken);
 
