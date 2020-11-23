@@ -26,7 +26,7 @@ namespace Q3TestApp.WebApi.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult> Create(Guid id, MarkJobAsCompletedCommand command)
+        public async Task<ActionResult> MarkJobAsCompleted(Guid id, MarkJobAsCompletedCommand command)
         {
             if (id != command.Id)
             {
